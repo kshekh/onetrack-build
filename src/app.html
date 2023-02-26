@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
+		<link rel="mask-icon" href="%sveltekit.assets%/favicon.svg" color="#111a2d" />
+		<link rel="apple-touch-icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		%sveltekit.head%
+	</head>
+
+	<body class="">
+		<div>%sveltekit.body%</div>
+		<script>
+			window.fbAsyncInit = function () {
+				FB.init({
+					appId: '458032785911064',
+					autoLogAppEvents: true,
+					xfbml: true,
+					version: 'v14.0'
+				});
+			};
+		</script>
+		<script
+			async
+			defer
+			crossorigin="anonymous"
+			src="https://connect.facebook.net/en_US/sdk.js"
+		></script>
+	</body>
+</html>
